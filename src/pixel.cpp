@@ -1,35 +1,39 @@
 #include "../include/pixel.h"
 
-Pixel::Pixel() {
-
+Pixel::Pixel()
+{
 }
 
-Pixel::~Pixel() {
-
+Pixel::~Pixel()
+{
 }
 
-int Pixel::getR() {
+int Pixel::getR()
+{
     return R;
 }
 
-void Pixel::setR(int r) {
+void Pixel::setR(int r)
+{
     R = r;
 }
 
-int Pixel::getG() {
+int Pixel::getG()
+{
     return G;
 }
 
-void Pixel::setG(int g) {  
+void Pixel::setG(int g)
+{
     G = g;
-}     
+}
 
-int Pixel::getB() {
+int Pixel::getB()
+{
     return B;
 }
 
-void Pixel::setB(int b) {
+void Pixel::setB(int b)
+{
     B = b;
 }
-    
-

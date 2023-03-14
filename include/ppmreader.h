@@ -9,10 +9,12 @@ using std::string;
 #ifndef PPMREADER_H
 #define PPMREADER_H
 
-class PPMReader {
+class PPMReader
+{
 protected:
     ifstream image_file;
     string filename;
+
 public:
     PPMReader(string f_name);
     Image readFile();

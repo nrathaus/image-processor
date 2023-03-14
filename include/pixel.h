@@ -3,9 +3,11 @@
 #ifndef PIXEL_H
 #define PIXEL_H
 
-class Pixel {
-protected:                       
+class Pixel
+{
+protected:
     int R, G, B;
+
 public:
     Pixel();
     ~Pixel();

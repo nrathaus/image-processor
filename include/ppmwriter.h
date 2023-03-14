@@ -9,11 +9,13 @@ using std::string;
 
 #include "../include/image.h"
 
-class PPMWriter {
+class PPMWriter
+{
 protected:
     Image new_image;
     ofstream image_file;
     string filename;
+
 public:
     PPMWriter(string f_name, Image image);
     void writeFile(matrix pixels);

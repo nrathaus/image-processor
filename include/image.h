@@ -8,17 +8,18 @@ using std::vector;
 
 #define matrix vector<vector<Pixel>>
 
-class Image {
+class Image
+{
 protected:
-    int width;                             // number of columns 
-    int height;                            // number of rows 
-    int max_color;                            // number of gray levels 
-    matrix pixels;                     //2D array
+    int width;     // number of columns
+    int height;    // number of rows
+    int max_color; // number of gray levels
+    matrix pixels; // 2D array
 
 public:
-    Image();                           
-    Image(int numRows, int numCols, int maxColor);   
-    ~Image();                                 
+    Image();
+    Image(int numRows, int numCols, int maxColor);
+    ~Image();
 
     int getHeight();
     void setHeight(int numRows);
