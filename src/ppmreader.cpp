@@ -29,6 +29,10 @@ Image PPMReader::readFile()
     }
 
     image_file >> header >> width >> height >> max_color;
+    std::cout << "height: " << height << std::endl;
+    std::cout << "width: " << width << std::endl;
+    std::cout << "max_color: " << max_color << std::endl;
+
     Image ppm_image(height, width, max_color);
     matrix pixels(height, vector<Pixel>(width, p));
 

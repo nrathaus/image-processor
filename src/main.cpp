@@ -42,16 +42,20 @@ int main(int argc, char const *argv[])
     if (argc == 3)
     {
         string file = argv[1], filter = argv[2];
+        std::cout << "Openning file:" << file << std::endl;
         PPMReader ppm_reader(file);
         Image ppm_image = ppm_reader.readFile();
+        std::cout << "Running filter: " << filter << std::endl;
         menu(ppm_image, filter);
-        PPMWriter ppm_writer(filter + ".ppm", ppm_image);
-        ppm_writer.writeFile(ppm_image.getPixels());
+        // PPMWriter ppm_writer(filter + ".ppm", ppm_image);
+        // ppm_writer.writeFile(ppm_image.getPixels());
+
+        std::cout << "Done" << std::endl;
+        return 1;
     }
-    else
-    {
-        std::cout << "Not enough arguments!" << std::endl;
-        std::cout << "Input ./bin/ppmprocessor image_name.ppm image_filter" << std::endl;
-    }
+    
+    std::cout << "Not enough arguments!" << std::endl;
+    std::cout << "Input ./bin/ppmprocessor image_name.ppm image_filter" << std::endl;
+    
     return 0;
 }
